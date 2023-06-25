@@ -2,20 +2,15 @@ set nocompatible
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
-"Plugin 'python-mode/python-mode'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'cespare/vim-toml'
-Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'fatih/vim-go'
-Plugin 'vim-airline/vim-airline'
-"Plugin 'mileszs/ack.vim'
-"Plugin 'jeetsukumaran/vim-filebeagle'
-"Plugin 'preservim/nerdtree'
-"Plugin 'tpope/vim-vinegar'
-Plugin 'tpope/vim-fugitive'
+Plugin 'Exafunction/codeium.vim'
 Plugin 'nvie/vim-flake8'
+Plugin 'jremmen/vim-ripgrep'
+Plugin 'hashivim/vim-terraform'
 " All of your Plugins must be added before the following line
 call vundle#end()
 filetype indent plugin on
