@@ -7,6 +7,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-fugitive'
+Plugin 'junegunn/gv.vim'
 Plugin 'Exafunction/codeium.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'jremmen/vim-ripgrep'
@@ -26,8 +28,8 @@ vnoremap <silent> -# :s/^#//<cr>:noh<cr>
 syntax on
 "colorscheme desert
 "colorscheme badwolf
-"colorscheme apprentice
-colorscheme sorcerer
+colorscheme apprentice
+"colorscheme sorcerer
 set list
 set listchars=tab:>-,trail:.
 set foldmethod=indent
@@ -37,11 +39,4 @@ nnoremap <space> za
 set nu
 autocmd StdinReadPre * let s:std_in=1
 let g:netrw_banner=0
-"let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+,\(^\|\s\s\)ntuser\.\S\+'
-"autocmd FileType netrw set nolist
-"autocmd VimEnter * if argc() == 0 && !exists('s:std_in') && v:this_session == '' | NERDTree | endif
-if executable('ag')
-    " Note we extract the column as well as the file and line number
-    set grepprg=ag\ --nogroup\ --nocolor\ --column
-    set grepformat=%f:%l:%c%m
-endif
+set hlsearch
